@@ -1,0 +1,321 @@
+/* CSS Document */
+/*公共样式*/
+body{
+	font-size:12px;
+	color: #333;
+}
+.container{
+	margin-left:auto;
+	margin-right: auto;
+	max-width: 1226px;
+}
+/*顶部代码*/
+.page-top{
+	height:38px;
+	background-color:#323232 ;
+	
+}
+.page-top .top-left{
+	float:left;
+	color: #a2a2a2;
+	line-height: 38px;/*line-height等同于height，使div内部文字垂直居中*/
+	
+}
+.page-top .top-left a{
+	display: inline-block;
+}
+.page-top .top-left span{
+	color: #3F3F3F;
+	padding: 0 3px;
+}
+.page-top .top-left a:hover{
+	color:#FFFFFF;
+}
+.page-top .top-left .download{
+	position: relative;
+}
+.page-top .top-left .down-box{
+	width: 124px;
+	background-color:#fff;
+	position: absolute;
+	left:50%;
+    top:38px;
+	margin-left: -62px;/*利用left50%加上margin-left（宽度/2），来实现绝对定位的居中*/
+	padding-top: 20px;
+	box-shadow: 0 1px 5px #aaa;
+    text-align: center;
+    font-size: 14px;  
+	display:none;
+}
+.page-top .top-left .down-box img{
+	width:88px;
+	height:88px;
+	display:block;
+	margin:0 auto;
+}
+.page-top .top-left .down-box b{/*通过div画二维码的三角指示标*/
+    border-style: solid;
+    border-width: 0px 10px 10px 10px;
+    border-color:transparent transparent #fff transparent;
+	position: absolute;
+	left: 50%;
+	margin-left: -10px;
+	top:-10px;
+}
+.page-top .top-left a.download i{
+	font-style: normal;
+	color:#323232;	
+}
+.page-top .top-left a.download:hover i{
+	color:#323232;
+}
+.page-top .top-left a.download:hover .down-box{/*实现APP二维码的展示效果*/
+	display: block;
+}
+.page-top .top-right{
+	float:right;
+	
+	
+}
+.page-top .top-right .login{/*未登录时*/
+	color: #a2a2a2;
+	line-height: 38px;
+	float:right;
+	margin-right: 20px;/*用浮动的方式将login和car-box置放在右侧，而且还能通过margin-right控制两者间的间隙*/
+}
+.page-top .top-right span{
+	color: #3F3F3F;
+	padding: 0 3px;
+}
+.page-top .top-right .login a:hover{
+	color:#FFFFFF;
+}
+
+.page-top .userinfo{/*登录后*/
+	float:right;
+	margin-right: 20px;
+}
+.page-top .userinfo .link{
+	line-height: 38px;
+	color: #a2a2a2;
+	
+}
+.page-top .userinfo span{
+	color: #3F3F3F;
+	padding: 0 3px;
+}
+.page-top .userinfo .link:hover{
+	color:#FFFFFF;	
+}
+.page-top .userinfo .user{
+	width: 120px;
+	display: inline-block;
+	position: relative;
+	
+}
+.page-top .userinfo .user .tit{
+	line-height: 38px;
+	text-align: center;
+	display: block;
+	color: #a2a2a2;
+	position: relative;
+	
+	
+}
+.page-top .userinfo .user ul{
+	display: none;
+	position:absolute;
+	left:0;
+	top:38px;
+	width: 120px;
+	padding:10px 0;
+	box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+}
+.page-top .userinfo .user li{
+	line-height: 30px;
+	text-align: center;
+}
+.page-top .userinfo .user li a{
+	display: block;
+}
+.page-top .userinfo li:hover{
+	background-color: #f5f5f5;
+	color:#ff6700;
+}
+.page-top .userinfo .user:hover{
+	background-color:#fff;
+}
+.page-top .userinfo .user:hover .tit{
+	color: #ff6700;
+}
+.page-top .userinfo .user:hover ul{
+	display: block;
+
+}
+.page-top .top-right .car-box{/*购物车*/
+	float: right;
+	position: relative;
+	
+	
+}
+.page-top .car-box .tit{
+	width: 110px;
+	background-color: #424242;
+	height: 38px;
+	display: block;
+	text-align: center;
+	line-height: 38px;
+	color:#a2a2a2;
+}
+.page-top .car-box .tit span{
+	color:#a2a2a2;
+}
+.page-top .car-box .pop{
+	width: 316px;
+	position: absolute;
+	top: 38px;
+	right:0;
+	background-color: #fff;
+	box-shadow: 0 2px 10px rgba(0,0,0,.15);
+	display: none;
+}
+.page-top .car-box .pop .nothing{
+	text-align: center;
+	font-size: 13px;
+	padding:40px 0;
+	
+}
+.page-top .pop .list{
+	padding: 0 20px;
+	margin-top:15px;
+	max-height: 450px;
+	overflow-y: auto;/*滚动条*/
+
+}
+.page-top .pop .list li{
+	border-bottom:1px solid #e0e0e0;
+	padding: 10px 0;
+	overflow: hidden;/*清除浮动元素的影响*/
+	
+}
+.page-top .pop .list .pic{/*一个元素设置了浮动属性后，下一个元素就会无视这个元素的存在，但是下一个元素中的文本内容依然会为这个元素让出位置使自身的文本内容环绕在设置浮动元素的周围*/
+	float: left;
+	
+	
+}
+.page-top .pop .list li:last-child{/*消除li最后一条横线*/
+	border:none;
+}
+.page-top .pop .list img{
+	width: 70px;
+	height: 70px;
+	
+}
+.page-top .pop .list .txt{
+	width: 120px;
+	float: left;
+	line-height: 70px;
+	white-space: nowrap;/*强制文字不换行*/
+	overflow: hidden;/*超出部分隐藏*/
+	text-overflow: ellipsis;/*文字超出部分变成省略号*/
+}
+.page-top .pop .list .txt:hover{
+	color:#ff6700;
+	
+}
+.page-top .pop .list .num{
+	float: right;
+	text-align: right;
+}
+.page-top .pop .list .num h4{
+	margin-top:12px;
+	font-weight: normal;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.page-top .pop .list .num i{
+	font-style: normal;
+	cursor: pointer;/*网页浏览时用户指针的样式或图形，pointer为手*/
+	color: #aaa;
+}
+.page-top .pop .list .num i:hover{
+	color: #333;
+}
+.page-top .pop .total{
+	background-color: #fafafa;
+	padding:15px 10px;
+	overflow: hidden;
+	
+}
+.page-top .pop .total .price{
+	float:left;
+}
+.page-top .pop .total .price p{
+	color: #7e7e7e;
+}
+.page-top .pop .total .price h3{
+	font-size: 20px;
+	color: #ff6700;
+	font-weight: normal;
+	margin-top:5px;
+}
+.page-top .pop .total .btn{
+	width: 132px;
+	height:40px;
+	background-color: #ff6700;
+	color:#fff;
+	text-align: center;
+	line-height: 40px;
+	float: right;
+	display: block;
+}
+.page-top .car-box:hover .tit{
+	background-color: #fff;
+	color: #ff6700;
+	
+}
+.page-top .car-box:hover .pop{
+	display: block;
+}
+/*导航区域样式*/
+.page-nav{
+	height: 96px;
+	position: relative;
+	
+}
+.page-nav .logo{
+	display: block;
+	width: 56px;
+	height: 56px;
+	margin-top: 20px;
+	float: left;
+	background: url("../img/logo-mi2.png") center center no-repeat;
+	background-size: 56px;
+	margin-right: 45px;
+}
+.page-nav .nav{
+	margin-left: 190px;
+}
+.page-nav .nav .nav-item{
+	margin-left: 20px;
+	float: left;
+	padding-top: 40px;
+	
+	
+	
+}
+.page-nav .nav .nav-item .tit{
+	font-size: 16px;
+	color: #666; 
+}
+.page-nav .nav .nav-item .tit:hover{
+	color:#ff6700;
+}
+.page-nav .nav-item .pop{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background-color: red;
+	left:0;
+	top: 0;
+}
