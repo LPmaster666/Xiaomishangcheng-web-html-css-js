@@ -26,7 +26,7 @@
 
 * 版权
 3. 需要注意的问题：
-- 使用div、ul、li横向布局时，需要清除float浮动的影响，可使用overfloat：hidden [具体使用方法](https://blog.csdn.net/qq_41638795/article/details/83304388）
+- 使用div、ul、li横向布局时，需要清除float浮动的影响，可使用overfloat：hidden [具体使用方法](https://blog.csdn.net/qq_41638795/article/details/83304388)
 - 制作二级下来菜单时
   - 浮动溢出问题：由于水平导航栏涉及浮动，所以往往会与浮动溢出相关联，这就涉及到解决浮动溢出的问题
   - 下拉菜单被页面其他内容遮盖的问题：需要在顶层同级父元素设置position:relative;以及z-index，注意z-index的层级关系，否则容易出现光标移动，菜单栏就立刻消失（当然只要你的鼠标滑过速度     超过导航栏消失的速度，就不会消失啦，哈哈哈）
