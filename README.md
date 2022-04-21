@@ -1,4 +1,4 @@
-# web前端小米商城项目实战（HTML+CSS+JS+PS）
+# web前端小米商城项目实战（HTML+CSS+JS）
 1. 项目介绍：
 * 仿小米商城的静态页面制作，以及JS交互的实现
 * 运用div+css做首页面index.html的整体布局；细节可用表格进行布局
