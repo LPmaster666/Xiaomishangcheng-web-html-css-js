@@ -46,6 +46,7 @@ body{
     text-align: center;
     font-size: 14px;  
 	display:none;
+	z-index: 1;
 }
 .page-top .top-left .down-box img{
 	width:88px;
@@ -130,6 +131,8 @@ body{
 	width: 120px;
 	padding:10px 0;
 	box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+	z-index: 1;
+	background-color: #fff;
 }
 .page-top .userinfo .user li{
 	line-height: 30px;
@@ -178,6 +181,7 @@ body{
 	background-color: #fff;
 	box-shadow: 0 2px 10px rgba(0,0,0,.15);
 	display: none;
+	z-index: 1;
 }
 .page-top .car-box .pop .nothing{
 	text-align: center;
@@ -190,6 +194,7 @@ body{
 	margin-top:15px;
 	max-height: 450px;
 	overflow-y: auto;/*滚动条*/
+	
 
 }
 .page-top .pop .list li{
@@ -293,15 +298,14 @@ body{
 	background-size: 56px;
 	margin-right: 45px;
 }
-.page-nav .nav{
-	margin-left: 190px;
-}
-.page-nav .nav .nav-item{
+
+.page-nav .nav .nav-item{/*tip：扩展nav-item元素范围，光标在悬停在这个范围时都能出现pop元素*/
 	margin-left: 20px;
 	float: left;
 	padding-top: 40px;
-	
-	
+	margin-top:24px;
+	padding:15px 4px 0;
+	height: 62px;
 	
 }
 .page-nav .nav .nav-item .tit{
@@ -314,8 +318,80 @@ body{
 .page-nav .nav-item .pop{
 	position: absolute;
 	width: 100%;
-	height: 100px;
-	background-color: red;
+	height: 230px;
 	left:0;
-	top: 0;
+	top: 96px;
+	background-color: #fff;
+	box-shadow: 0 3px 4px rgba(0,0,0,.18);
+	border-top: 1px solid #e0e0e0;
+	display: none;
 }
+.page-nav .down-ul{
+	overflow: hidden;
+}
+.page-nav .down-li{
+	width: 245px;
+	float: left;
+	padding-top: 40px;
+	text-align: center;
+	position: relative;
+}
+.page-nav .down-li .pic img{
+	width:160px;
+	height: 110px;
+	display: block;
+	margin:0 auto;
+}
+.page-nav .down-li .name{
+	font-weight: normal;
+	font-size: 13px;
+	margin-top:20px;
+}
+.page-nav .down-li .price{
+	color: #ff6700;
+	margin-top: 5px;
+}
+.page-nav .down-li .tage{
+	width: 64px;
+	height: 20px;
+	border: 1px solid #ff6700;
+	text-align: center;
+	line-height: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -32px;
+	color: #ff6700;
+	top:0;
+}
+.page-nav .down-li i{
+	background-color: #e0e0e0;
+	width: 1px;
+	height: 100px;
+	position: absolute;
+	right: 0;
+	top:36px;
+}
+.page-nav .down-li:last-child i{
+	display: none;
+}
+.page-nav .nav .nav-item:hover .pop{
+	display: block;
+}
+#page-all-nav{
+	visibility: hidden;/*可让“全部分类菜单”选项隐藏*/
+	position: relative;
+}
+#page-all-nav .slider-nav{
+	visibility:visible;/*仅显示“全部菜单样式”*/
+}
+.page-nav .slider-nav{
+	position: absolute;
+	width: 232px;
+	height: 458px;
+	border:1px solid #ff6700;
+	background-color: #fff;
+	top:72px;
+	right:-10px;
+
+}
+
