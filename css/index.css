@@ -1,0 +1,6 @@
+#page-all-nav .tit{
+	visibility: hidden;/*首页让“全部商品分类”文字选项隐藏*/
+}
+#page-all-nav .slider-nav{
+	visibility:visible;/*让首页显示“全部商品分类”的菜单*/
+}

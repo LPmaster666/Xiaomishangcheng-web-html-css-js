@@ -330,7 +330,7 @@ body{
 	overflow: hidden;
 }
 .page-nav .down-li{
-	width: 245px;
+	width: 205px;
 	float: left;
 	padding-top: 40px;
 	text-align: center;
@@ -378,20 +378,74 @@ body{
 	display: block;
 }
 #page-all-nav{
-	visibility: hidden;/*可让“全部分类菜单”选项隐藏*/
 	position: relative;
+	visibility: visible;
 }
 #page-all-nav .slider-nav{
-	visibility:visible;/*仅显示“全部菜单样式”*/
+	visibility: hidden;/*公共页面隐藏整个菜单，仅显示”全部商品分类“文字选项*/
 }
 .page-nav .slider-nav{
 	position: absolute;
 	width: 232px;
-	height: 458px;
-	border:1px solid #ff6700;
-	background-color: #fff;
+	height: 430px;
+	color:#fff;
+	background: rgba(105,101,101,.6);
 	top:72px;
 	right:-10px;
-
+	padding: 20px 0;
 }
-
+.page-nav .slider-li{
+	line-height: 42px;
+	padding: 0 24px 0 30px;
+}
+.page-nav .slider-li.name{
+	font-size: 13px;
+}
+.page-nav .slider-li.name span{
+	margin-right: 5px;
+}
+.page-nav .slider-li i{
+	float: right;
+}
+.page-nav .slider-li:hover {
+	background-color: #ff6700;
+	color: #fff;
+}
+.page-nav .slider-pop{
+	position: absolute;
+	width:992px;
+	height: 469px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.18);
+	left:232px;
+	top:0px;
+	border: 1px solid #e0e0e0;
+	display: none;
+}
+.page-nav .slider-nav .pop-li{
+	float: left;
+	width: 224px;
+	margin-left: 24px;
+	overflow: hidden;
+	height: 58px;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+.page-nav .slider-nav .pop-li p{
+	color: #000;
+}
+.page-nav .slider-nav .pop-li:hover p{
+	color: #ff6700;
+}
+.page-nav .slider-nav .pop-li img{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 16px;
+	padding:10px 0;
+}
+.page-nav .slider-nav .slider-li:hover .slider-pop{
+	display: block;
+}
+#page-all-nav:hover slider-nav{
+	display: block;
+}
