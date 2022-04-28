@@ -305,7 +305,7 @@ body{
 	padding-top: 40px;
 	margin-top:24px;
 	padding:15px 4px 0;
-	height: 62px;
+	height: 57px;
 	
 }
 .page-nav .nav .nav-item .tit{
@@ -325,6 +325,7 @@ body{
 	box-shadow: 0 3px 4px rgba(0,0,0,.18);
 	border-top: 1px solid #e0e0e0;
 	display: none;
+	z-index: 100;
 }
 .page-nav .down-ul{
 	overflow: hidden;
@@ -392,7 +393,8 @@ body{
 	background: rgba(105,101,101,.6);
 	top:72px;
 	right:-10px;
-	padding: 20px 0;
+	padding: 15px 0;
+	z-index: 1;
 }
 .page-nav .slider-li{
 	line-height: 42px;
@@ -413,17 +415,19 @@ body{
 }
 .page-nav .slider-pop{
 	position: absolute;
-	width:992px;
-	height: 469px;
+	width:990px;
+	height: 460px;
     box-shadow: 0 8px 16px rgba(0,0,0,.18);
 	left:232px;
 	top:0px;
 	border: 1px solid #e0e0e0;
 	display: none;
+	z-index: 1;
+	background-color: #fff;
 }
 .page-nav .slider-nav .pop-li{
 	float: left;
-	width: 224px;
+	width: 223.5px;
 	margin-left: 24px;
 	overflow: hidden;
 	height: 58px;
@@ -456,22 +460,29 @@ body{
 	margin-top: 24px;
 }
 .page-nav .search .q{
-	width: 234px;
+	width: 226px;
 	height: 48px;
-	border: 1px solid #ff6700;
+	border: 1px solid #e0e0e0;
 	outline: none;
 	line-height: 48px;
-	padding-left: 4px;
+	padding-left: 8px;
 	float: left;
 }
-.page-nav .search .btn{
+.page-nav .search .btn{/*搜索框的图标*/
 	width: 50px;
 	height: 50px;
-	border: 1px solid #ff6700;
+	border: 1px solid #e0e0e0;
 	border-left: none;
 	float: left;
+	cursor: pointer;
 	background-color: #fff;
-		
+	background: url("../img/icons/搜索.png")center center no-repeat;
+	background-size: 30px;	
+}
+.page-nav .search .btn:hover{
+	background-color: #ff6700;
+	background-image: url("../img/icons/搜索.png");
+	border-color: #ff6700;
 }
 .page-nav .search .tags{
 	line-height: 18px;
@@ -484,13 +495,41 @@ body{
 	margin-top: -9px;
 	left: 10px;
 	color: #757575;
-	
 }
 .page-nav .search .tags:hover{
 	background-color: #ff6700;
 	color: #fff;
 }
-.page-nav .search ul{
+.page-nav .search:hover .q,
+.page-nav .search:hover .btn{
+	border-color: #b0b0b0;
+}
+.page-nav .search.active .q,
+.page-nav .search.active .btn{
+	border-color: #ff6700;
+}
+.page-nav .search .hot{
+	width: 234px;
+	border: 1px solid #ff6700;
+	border-top: none;
 	position: absolute;
-	top: 50px;
+	left: 0;
+	top:50px;
+	display: none;
+}
+.page-nav .search .hot li{
+	line-height: 30px;
+}
+.page-nav .search .hot li a{
+	display: block;
+	padding: 0 15px;
+	color: #535353;
+}
+.page-nav .search .hot li:hover{
+	background-color: #fafafa;
+}
+.page-nav .search .hot li i{
+	float: right;
+	font-style: normal;
+	color: #b0b0b0;
 }

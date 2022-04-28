@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5157",
+      "name": "切换器右",
+      "font_class": "qiehuanqiyou",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "5158",
+      "name": "切换器左",
+      "font_class": "qiehuanqizuo",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "5387553",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "eafe",
+      "unicode_decimal": 60158
+    },
+    {
       "icon_id": "7939944",
       "name": "方向-向右",
       "font_class": "arrow-",

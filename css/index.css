@@ -4,3 +4,48 @@
 #page-all-nav .slider-nav{
 	visibility:visible;/*让首页显示“全部商品分类”的菜单*/
 }
+.idx-banner .container{
+	height: 460px;
+	overflow: hidden;
+	position: relative;
+	
+}
+.idx-banner ul{
+	width: 20000px;
+	height: 460px;
+
+}
+.idx-banner li{
+	width: 1226px;
+	height: 460px;
+	position: relative;
+	float:left;
+}
+.idx-banner li img{
+	width: 1226px;
+	height: 460px;
+}
+.idx-banner li a{
+	position: absolute;
+	width: 990px;
+	height: 460px;
+	top: 0;
+	right: 0;
+}
+.idx-banner .btn{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -35px;
+}
+.idx-banner .btn.prev{
+	left:234px;
+}
+.idx-banner .btn.next{
+	left: 1177px;
+}
+.idx-banner .page{
+	position: absolute;
+	left:0;
+	top:0;
+}
