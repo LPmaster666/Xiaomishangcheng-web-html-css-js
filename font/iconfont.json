@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "15323496",
+      "name": "F_round_字母f",
+      "font_class": "F_round",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "338376",
+      "name": "充值",
+      "font_class": "chongzhi",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "769266",
+      "name": "付款",
+      "font_class": "shouye",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "6528436",
+      "name": "SD卡",
+      "font_class": "SDqia",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "10635088",
+      "name": "时间",
+      "font_class": "time",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "11239041",
+      "name": "企业",
+      "font_class": "qiye",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
       "icon_id": "5157",
       "name": "切换器右",
       "font_class": "qiehuanqiyou",
