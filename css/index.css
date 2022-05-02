@@ -155,22 +155,39 @@ body{
 	margin-top: 40px;
 	overflow: hidden;/*子元素浮动对父元素产生高度塌陷的影响，所以此处解决方法为加入overflow：hidden*/
 }
-.idx-title{
-	line-height: 60px;
-}
+
 .idx-title .tit{
 	font-size: 22px;
 	color: #666;
+	line-height: 60px;
 }
 .idx-title .see-all{
 	float: right;
 	font-size: 16px;
 	color: #666;
 	position: relative;
-	top: 10px;
+	top: 25px;
 }
 .idx-title .see-all:hover{
-	color: #ef6700;
+	color: #ff6700;
+}
+.idx-title .list{
+	width: 400px;
+	float: right;
+	text-align: right;
+	position: relative;
+	top: 25px;
+    
+}
+.idx-title .list li{
+	display: inline-block;
+	margin-left: 26px;
+	font-size: 16px;
+}
+.idx-title .list li.active,
+.idx-title .list li:hover{
+	color: #ff6700;
+	border-bottom: 2px solid #ff6700;
 }
 .idx-container .col-5{
 	width:234px;
