@@ -1,9 +1,12 @@
+
+/*全部分类菜单*/
 #page-all-nav .tit{
 	visibility: hidden;/*首页让“全部商品分类”文字选项隐藏*/
 }
 #page-all-nav .slider-nav{
 	visibility:visible;/*让首页显示“全部商品分类”的菜单*/
 }
+/*轮播导航*/
 .idx-banner .container{
 	height: 460px;
 	overflow: hidden;
@@ -138,4 +141,47 @@
 	display: block;
 	width: 310px;
 	height: 165px;
+}
+/*广告图*/
+.idx-adv img{
+	width: 100%;
+	display: block;
+}
+/*大内容区*/
+.idx-container{
+	background-color:#f5f5f5;
+	margin-top: 40px;
+	overflow: hidden;/*子元素浮动对父元素产生高度塌陷的影响，所以此处解决方法为加入overflow：hidden*/
+}
+.idx-title{
+	line-height: 60px;
+}
+.idx-title .tit{
+	font-size: 22px;
+	color: #666;
+}
+.idx-title .see-all{
+	float: right;
+	font-size: 16px;
+	color: #666;
+	position: relative;
+	top: 10px;
+}
+.idx-title .see-all:hover{
+	color: #ef6700;
+}
+.idx-container .col-5{
+	width:234px;
+	margin-left: 14px;
+	background-color: #fff;
+	float: left;
+	margin-bottom: 14px;
+}
+.idx-container .adv-box.col-5{
+	margin-left: 0;
+}
+.idx-container .adv-box img{
+	width: 234px;
+	height: 616px;
+	display: block;
 }
