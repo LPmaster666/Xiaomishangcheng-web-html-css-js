@@ -1,4 +1,6 @@
-
+body{
+	min-height: 6000px;
+}
 /*全部分类菜单*/
 #page-all-nav .tit{
 	visibility: hidden;/*首页让“全部商品分类”文字选项隐藏*/
@@ -177,11 +179,68 @@
 	float: left;
 	margin-bottom: 14px;
 }
+.idx-container .col-5:hover{
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.idx-container .idx-box{
+	height: 614px;
+	clear: both;
+}
+.idx-container .adv-box{
+	float: left;
+	
+}
 .idx-container .adv-box.col-5{
 	margin-left: 0;
 }
 .idx-container .adv-box img{
 	width: 234px;
-	height: 616px;
+	height: 614px;
 	display: block;
+}
+.idx-container .good-box{
+	float: right;
+	width: 992px;
+}
+.idx-container .good-item{
+	background-color: #fff;
+	height: 300px;
+}
+.idx-container .good-item .pic img{
+	width: 160px;
+	height: 160px;
+	display: block;
+	margin: 20px auto;
+}
+.idx-container .good-item .name{
+	width: 210px;
+	margin: 10px auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	
+}
+.idx-container .good-item .desc{
+	width: 210px;
+	color: #b0b0b0;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: normal;
+}
+.idx-container .good-item .price{
+	display: block;
+	width: 210px;
+	text-align: center;
+	margin-top: 5px;
+	color: #ff6700;
+}
+.idx-container .good-item .price i{
+	color: #ff6700;
+}
+.idx-container .good-item .price span{
+	font-size: normal;
+	text-decoration: line-through;
+	margin-left: 5px;
+	color: #b0b0b0;
 }
