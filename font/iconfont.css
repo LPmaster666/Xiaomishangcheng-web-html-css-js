@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3341235 */
-  src: url('iconfont.woff2?t=1651411543276') format('woff2'),
-       url('iconfont.woff?t=1651411543276') format('woff'),
-       url('iconfont.ttf?t=1651411543276') format('truetype');
+  src: url('iconfont.woff2?t=1651570010982') format('woff2'),
+       url('iconfont.woff?t=1651570010982') format('woff'),
+       url('iconfont.ttf?t=1651570010982') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,11 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiangyou2:before {
+  content: "\e776";
+  color: #ff6700;
 }
 
 .icon-jiantouxiangyoufill:before {
@@ -48,7 +53,7 @@
 
 .icon-qiehuanqizuo:before {
   content: "\e601";
-  font-size: 30px;
+  font-size: 30px;	
 }
 
 .icon-sousuo:before {

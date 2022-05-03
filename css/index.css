@@ -189,15 +189,13 @@ body{
 	color: #ff6700;
 	border-bottom: 2px solid #ff6700;
 }
+
 .idx-container .col-5{
 	width:234px;
 	margin-left: 14px;
 	background-color: #fff;
 	float: left;
 	margin-bottom: 14px;
-}
-.idx-container .col-5:hover{
-	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 .idx-container .idx-box{
 	height: 614px;
@@ -210,10 +208,24 @@ body{
 .idx-container .adv-box.col-5{
 	margin-left: 0;
 }
-.idx-container .adv-box img{
+.idx-container .adv-box .single{
+	display: block;
+	width: 234px;
+	height: 614px;
+}
+.idx-container .adv-box .single img{
 	width: 234px;
 	height: 614px;
 	display: block;
+}
+.idx-container .adv-box .double{
+	display: block;
+	height: 300px;
+	margin-bottom: 14px;
+}
+.idx-container .adv-box .double img{
+	height: 300px;
+	width: 100%;
 }
 .idx-container .good-box{
 	float: right;
@@ -260,4 +272,70 @@ body{
 	text-decoration: line-through;
 	margin-left: 5px;
 	color: #b0b0b0;
+}
+.idx-container .last{
+	background-color: #f5f5f5;
+	background-color: transparent;
+}
+.idx-container .last .good-top,
+.idx-container .last .good-more{
+	background-color: #fff;
+	height: 143px;
+	margin-bottom: 14px;
+}
+.idx-container .last .good-top .sm-img{
+	width: 80px;
+	height: 80px;
+	float: right;
+	margin-top: 35px;
+	margin-right: 20px;
+}
+.idx-container .last .good-top .sm-img img{
+	width: 80px;
+	height: 80px;
+	display: block;
+}
+.idx-container .last .txt{
+	margin-left: 30px;
+	overflow: hidden;
+}
+.idx-container .last .good-top .txt{
+	float: left;
+	margin-top: 35px;
+}
+.idx-container .last .good-top .txt h3{
+	width: 94px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.idx-container .last .good-top .txt p{
+	color: #ff6700;
+	line-height: 30px;
+}
+.idx-container .last .good-more{
+	position: relative;
+}
+.idx-container .last .good-more h3{
+	font-size: 18px;
+	margin-top: 50px;
+}
+.idx-container .last .good-more p{
+	line-height: 30px;
+}
+.idx-container .last .good-more i{
+	font-size: 60px;
+	position: absolute;
+	top: 40px;
+	right: 30px;
+}
+.idx-container .good-item:hover,
+.idx-container .adv-box .single:hover,
+.idx-container .adv-box .double:hover,
+.idx-container .last .good-top:hover,
+.idx-container .last .good-more:hover{
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.idx-container .last:hover{
+	box-shadow: none;
 }
