@@ -34,9 +34,9 @@
 - 多种元素重叠hover时，注意元素的层级关系，如果z-index失效，可能和父级层级有关
 - 子元素浮动对父元素的影响（高度塌陷）
   - 父元素没有设置宽度和高度，完全是由子元素内容撑起来的，一旦子元素浮动也就是脱离文档流。浏览器渲染时，就好像父元素里面没有内容了。所以就会出现高度塌陷问题。[解决方法](https://blog.csdn.net/suandfei/article/details/100637915)
-4. 效果展示图：
+5. 效果展示图：
 ![展示效果](https://github.com/LPmaster666/Xiaomishangcheng-web-html-css-js/blob/main/%E5%B1%95%E7%A4%BA%E6%95%88%E6%9E%9C%E5%9B%BE.png)
-
-
+***
+附加：[解决Adobe Dreamweaver 2020在编程敲代码时又卡又慢延迟的问题](https://blog.csdn.net/WeilaPls/article/details/108669991)
 
 
