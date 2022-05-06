@@ -18,7 +18,8 @@ body{
 .page-top .top-left{
 	float:left;
 	color: #a2a2a2;
-	line-height: 38px;/*line-height等同于height，使div内部文字垂直居中*/
+	line-height: 37px;/*line-height等同于height，使div内部文字垂直居中*/
+
 	
 }
 .page-top .top-left a{
@@ -532,4 +533,204 @@ body{
 	float: right;
 	font-style: normal;
 	color: #b0b0b0;
+}
+/*底部页脚*/
+.page-foot .ts{
+	overflow: hidden;
+	margin: 30px auto;
+}
+.page-foot .ts li{
+	width: 244px;
+	border-right: 1px solid #b0b0b0;
+	line-height: 25px;
+	float: left;
+	font-size: 16px;
+	text-align: center;
+	color:#616161; 
+}
+.page-foot .ts li i{
+	font-size: 22px;
+	margin-right: 5px;
+	position: relative;
+	top: 3px;
+}
+.page-foot .ts li:hover a{
+	color: #ff6700;
+}
+.page-foot .ts li:last-child{
+	border-right: none;
+}
+.page-foot .nav{
+	border-top: 1px solid #b0b0b0;
+	padding-top: 40px;
+	overflow: hidden;
+}
+.page-foot .nav .lt{
+	float: left;
+	width: 974px;
+	overflow: hidden;
+}
+.page-foot .nav .lt dl{
+	width: 160px;
+	float: left;
+	
+}
+.page-foot .nav .lt dt{
+	color: #424242;
+	font-size: 14px;
+	line-height: 40px;
+}
+.page-foot .nav .lt dd{
+	color: #757575;
+	line-height: 30px;
+}
+.page-foot .nav .lt dd:hover{
+	color: #ff6700;
+}
+.page-foot .nav .gt{
+	width: 248px;
+	float: right;
+	text-align: center;
+	border-left: 1px solid #b0b0b0;
+}
+.page-foot .nav .gt h3{
+	font-weight: normal;
+	color: #ff6700;
+	font-size: 22px;
+}
+.page-foot .nav .gt h4{
+	font-size: 12px;
+	font-weight: normal;
+	color: #757575;
+	line-height: 30px;
+}
+.page-foot .bot{
+	height: 60px;
+	margin-top: 30px;
+	background-color: #fafafa;
+}
+.page-foot .logo{
+	display: block;
+	width: 56px;
+	height: 56px;
+	margin-top: 20px;
+	float: left;
+	background: url("../img/logo-mi2.png") center center no-repeat;
+	background-size: 56px;
+	margin-right: 45px;
+}
+.page-foot .bot .tit{
+	display: inline-block;
+	margin-top: 45px;
+	color:#b0b0b0;
+}
+/*侧边导航栏*/
+.page-slider{
+	position: fixed;
+	right: 0;
+	bottom: 70px;
+	width: 82px;
+}
+.page-slider li{
+	height: 92px;
+	width: 82px;
+	border-bottom: 1px solid #f5f5f5;
+	border-left: 1px solid #f5f5f5;
+	text-align: center;
+	background-color: #fff;
+	border-top:1px solid #fff;
+	cursor: pointer;
+	position: relative;
+}
+.page-slider li .pop{
+	display: none;
+}
+.page-slider li i.my-icon{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-image: url("../img/侧边导航ps.png");
+	background-size:180px 180px;
+	margin: 24px auto 0px;
+	
+}
+.page-slider li i.icon-app{
+	background-position: 0 -60px;
+}
+.page-slider li i.icon-user{
+	background-position: 0 0px;
+}
+.page-slider li i.icon-service{
+	background-position: 0 -90px;
+}
+.page-slider li i.icon-concat{
+	background-position: 0 -120px;
+}
+.page-slider li i.icon-car{
+	background-position: 0 -150px;
+}
+.page-slider li i.icon-top{
+	background-position: 0 -30px;
+}
+.page-slider li span{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #757575;
+	margin-top: 10px;
+}
+.page-slider li .pop{
+	width: 130px;
+	height: 188px;
+	position: absolute;
+	right: 100px;
+	top: 0;
+	background-color: #fff;border: 1px solid #f5f5f5;
+	border-right: none;
+}
+.page-slider li .pop b{/*通过div画二维码的三角指示标*/
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: transparent  transparent transparent #fff;
+	position: absolute;
+    right: -20px;
+	top: 40px;
+}
+.page-slider li .pop img{
+	width: 95px;
+	height: 95px;
+	display: block;
+	margin: 24px auto;
+}
+.page-slider li .pop p{
+	text-align: center;
+	width: 95px;
+	margin: 0 auto;
+}
+.page-slider li:hover .pop{
+	display: block;
+}
+.page-slider li.last{
+	margin-top: 14px;
+}
+.page-slider li:hover span{
+	color: #ff6700;
+}
+.page-slider li:hover i.icon-app{
+	background-position: -30px -60px;
+}
+.page-slider li:hover i.icon-user{
+	background-position: -30px 0px;
+}
+.page-slider li:hover i.icon-service{
+	background-position: -30px -90px;
+}
+.page-slider li:hover i.icon-concat{
+	background-position: -30px -120px;
+}
+.page-slider li:hover i.icon-car{
+	background-position: -30px -150px;
+}
+.page-slider li:hover i.icon-top{
+	background-position: -30px -30px;
 }

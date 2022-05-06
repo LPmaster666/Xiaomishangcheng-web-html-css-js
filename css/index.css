@@ -1,6 +1,4 @@
-body{
-	min-height: 6000px;
-}
+
 /*全部分类菜单*/
 #page-all-nav .tit{
 	visibility: hidden;/*首页让“全部商品分类”文字选项隐藏*/
@@ -154,8 +152,11 @@ body{
 	background-color:#f5f5f5;
 	margin-top: 40px;
 	overflow: hidden;/*子元素浮动对父元素产生高度塌陷的影响，所以此处解决方法为加入overflow：hidden*/
+	
 }
-
+.idx-title{
+	clear: both;
+}
 .idx-title .tit{
 	font-size: 22px;
 	color: #666;
@@ -188,12 +189,12 @@ body{
 .idx-title .list li:hover{
 	color: #ff6700;
 	border-bottom: 2px solid #ff6700;
+	cursor: pointer;
 }
 
 .idx-container .col-5{
 	width:234px;
 	margin-left: 14px;
-	background-color: #fff;
 	float: left;
 	margin-bottom: 14px;
 }
@@ -221,8 +222,9 @@ body{
 .idx-container .adv-box .double{
 	display: block;
 	height: 300px;
-	margin-bottom: 14px;
+	margin-bottom:14px;	
 }
+
 .idx-container .adv-box .double img{
 	height: 300px;
 	width: 100%;
@@ -230,6 +232,16 @@ body{
 .idx-container .good-box{
 	float: right;
 	width: 992px;
+}
+.idx-container .idx-home .good-box{
+	display: none;
+}
+.idx-container .idx-home .active{
+	display: block;
+}
+.idx-container .good-item{
+	background-color: #fff;
+	height: 300px;
 }
 .idx-container .good-item{
 	background-color: #fff;
@@ -333,9 +345,70 @@ body{
 .idx-container .adv-box .single:hover,
 .idx-container .adv-box .double:hover,
 .idx-container .last .good-top:hover,
-.idx-container .last .good-more:hover{
+.idx-container .last .good-more:hover,
+.video .item:hover{
 	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 .idx-container .last:hover{
 	box-shadow: none;
+}
+/*视频*/
+.video{
+	margin-bottom: 60px;
+	height: 285px;
+}
+.video .col-4{
+	width:285px;
+	margin-left: 14px;
+	float: left;
+	margin-bottom: 14px;
+}
+.video .item{
+	background-color: #fff;
+	height: 285px;
+}
+.video .item img{
+	width: 100%;
+}
+.video .item .pic，
+.video .item .pic img{
+	display: block;
+}
+.video .item .pic{
+	position: relative;
+}
+.video .item .pic .play{
+	display: block;
+	width: 36px;
+	height: 24px;
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+	border: 2px solid #fff;
+	border-radius: 12px;
+	text-align: center;
+}
+.video .item .pic i{
+	width: 0px;
+	height: 0px;
+	display: inline-block;
+	border-top: 6px solid transparent;
+	border-left: 10px solid #fff;
+	border-right: 10px solid transparent;
+	border-bottom: 6px solid transparent;
+	position: relative;
+	top: 4px;
+	left: 4px;
+}
+.video .item .pic:hover .play{
+	background-color: #ff6700;
+	border-color: #ff6700;
+}
+.video .item h3{
+	margin: 30px 40px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: normal;
+	text-align: center;
 }
