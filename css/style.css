@@ -388,10 +388,10 @@ body{
 }
 .page-nav .slider-nav{
 	position: absolute;
-	width: 232px;
+	width: 235px;
 	height: 430px;
 	color:#fff;
-	background: rgba(105,101,101,.6);
+	background: rgba(105,101,101);
 	top:72px;
 	right:-10px;
 	padding: 15px 0;

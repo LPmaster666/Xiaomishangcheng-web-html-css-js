@@ -2,6 +2,8 @@
 <html>
 <head>
  <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>  
 	 小米商城 - Xiaomi 11 Ultra、Redmi K40 Pro、MIX FOLD，小米电视官方网站
 	</title>
@@ -447,19 +449,21 @@
 	</div>
 <!--	导航end-->
 <!--	轮播导航start-->
-	<div class="idx-banner">
+	<div id="banner" class="idx-banner">
 		<div class="container">
-			<ul class="banner-list">
-				<li><img src="img/banner2.png" alt=""><a href=""></a></li>
+			<ul class="banner-list" style="position: relative ;left: 0px"   >
+				<li ><img src="img/banner1.jpg" alt=""><a href=""></a></li>
 				<li><img src="img/banner2.png" alt=""><a href=""></a></li>
 				<li><img src="img/banner3.png" alt=""><a href=""></a></li>
+				<li ><img src="img/banner1.jpg" alt=""><a href=""></a></li>
 			</ul>
-			<a href="" class="btn prev iconfont icon-qiehuanqizuo"></a>
-			<a href="" class="btn next iconfont icon-qiehuanqiyou"></a>
+			<a  class="btn prev iconfont icon-qiehuanqizuo"></a>
+			<a  class="btn next iconfont icon-qiehuanqiyou"></a>
 			<div class="page">
-				<a href=""><span>1</span></a>
-				<a href=""><span>2</span></a>
-				<a href=""><span>3</span></a>
+				<a data-index="0"><span>0</span></a>
+				<a data-index="1"><span>1</span></a>
+				<a data-index="2"><span>2</span></a>
+				<a data-index="3" style="display: none"><span>3</span></a>
 			</div>
 		</div>
 	</div>
@@ -849,20 +853,7 @@
 	</ul>
 <!--	侧边导航栏end-->
 <!--	视频播放弹窗start-->
-	<div class="idx-video-bg">
-	</div>
-	<div class="idx-video-box">
-		<div class="tit">
-			<span>2021年春季新品发布会第一场</span>
-			<i class="close"></i>
-		</div>
-		<div class="video-box">
-			<video src=""></video>
-			<div class="play"><i></i></div>
-		
-		</div>
 	
-	</div>
 <!--	视频播放弹窗end-->
 	<script src="js/index.js"></script>
 </body>

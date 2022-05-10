@@ -9,14 +9,13 @@
 /*轮播导航*/
 .idx-banner .container{
 	height: 460px;
-	overflow: hidden;
 	position: relative;
+	overflow: hidden;
 	
 }
 .idx-banner ul{
 	width: 20000px;
 	height: 460px;
-
 }
 .idx-banner li{
 	width: 1226px;
@@ -40,6 +39,7 @@
 	top: 50%;
 	left: 0;
 	margin-top: -35px;
+	cursor: pointer;
 }
 .idx-banner .btn.prev{
 	left:234px;
@@ -73,6 +73,7 @@
 	background-color: rgba(255,255,255,0.3);
 	border-color: #757575;
 	border-color: rgba(0,0,0,0.4);
+	cursor: pointer;
 }
 .idx-banner .page span{
 	visibility: hidden;
